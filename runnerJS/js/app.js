@@ -132,6 +132,10 @@ class app {
         document.addEventListener("keydown", (e) => {
             this.onKeyDown(e);
         });
+
+        document.body.addEventListener("click", (e) => {
+            this.runner.startJump();
+        });
     }
 
     onKeyDown(e) {
